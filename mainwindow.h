@@ -7,6 +7,7 @@
 #include <QFileDialog>
 #include <QString>
 #include <iostream>
+#include <QTime>
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +27,8 @@ private slots:
     void on_actionOpen_triggered();
 
     void on_actionSave_triggered();
+
+    void on_actionBicubic_Interpolation_Resize_triggered();
 
 private:
     Ui::MainWindow *ui;

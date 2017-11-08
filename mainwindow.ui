@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>702</width>
-    <height>396</height>
+    <width>1000</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>701</width>
-      <height>351</height>
+      <width>1001</width>
+      <height>471</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -40,15 +40,14 @@
      </item>
     </layout>
    </widget>
-   <zorder>label_2</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>702</width>
+     <width>1000</width>
      <height>22</height>
     </rect>
    </property>
@@ -64,11 +63,11 @@
      <string>Edit</string>
     </property>
     <addaction name="actionRGBtoGrayScale"/>
+    <addaction name="actionBicubic_Interpolation_Resize"/>
    </widget>
    <addaction name="menuRGBtoGrayScale"/>
    <addaction name="menuEdit"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
    <property name="text">
     <string>Open</string>
@@ -76,12 +75,17 @@
   </action>
   <action name="actionRGBtoGrayScale">
    <property name="text">
-    <string>RGBtoGrayScale</string>
+    <string>Floyd–Steinberg dithering</string>
    </property>
   </action>
   <action name="actionSave">
    <property name="text">
     <string>Save</string>
+   </property>
+  </action>
+  <action name="actionBicubic_Interpolation_Resize">
+   <property name="text">
+    <string>Bicubic Interpolation. Resize</string>
    </property>
   </action>
  </widget>
