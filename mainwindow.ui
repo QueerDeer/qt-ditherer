@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>1200</width>
     <height>500</height>
    </rect>
   </property>
@@ -19,13 +19,16 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1001</width>
+      <width>1201</width>
       <height>471</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLabel" name="label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -33,6 +36,13 @@
      </item>
      <item>
       <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
        <property name="text">
         <string/>
        </property>
@@ -47,7 +57,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1000</width>
+     <width>1200</width>
      <height>22</height>
     </rect>
    </property>
@@ -64,6 +74,14 @@
     </property>
     <addaction name="actionRGBtoGrayScale"/>
     <addaction name="actionBicubic_Interpolation_Resize"/>
+    <addaction name="actionBlending"/>
+    <addaction name="actionAWGN"/>
+    <addaction name="actionImpulse_Noise"/>
+    <addaction name="actionGlobal_Contrast"/>
+    <addaction name="actionLinear_Filtration"/>
+    <addaction name="actionMediana"/>
+    <addaction name="actionBinarization"/>
+    <addaction name="actionBDZ"/>
    </widget>
    <addaction name="menuRGBtoGrayScale"/>
    <addaction name="menuEdit"/>
@@ -86,6 +104,46 @@
   <action name="actionBicubic_Interpolation_Resize">
    <property name="text">
     <string>Bicubic Interpolation. Resize</string>
+   </property>
+  </action>
+  <action name="actionBlending">
+   <property name="text">
+    <string>Blending</string>
+   </property>
+  </action>
+  <action name="actionAWGN">
+   <property name="text">
+    <string>AWGN</string>
+   </property>
+  </action>
+  <action name="actionImpulse_Noise">
+   <property name="text">
+    <string>Impulse Noise</string>
+   </property>
+  </action>
+  <action name="actionGlobal_Contrast">
+   <property name="text">
+    <string>Global Contrast</string>
+   </property>
+  </action>
+  <action name="actionLinear_Filtration">
+   <property name="text">
+    <string>Linear Filtration</string>
+   </property>
+  </action>
+  <action name="actionMediana">
+   <property name="text">
+    <string>Mediana</string>
+   </property>
+  </action>
+  <action name="actionBinarization">
+   <property name="text">
+    <string>Binarization</string>
+   </property>
+  </action>
+  <action name="actionBDZ">
+   <property name="text">
+    <string>BDZ</string>
    </property>
   </action>
  </widget>
